@@ -11,15 +11,10 @@
   <!DOCTYPE html>
   <html>
     <head>
-      {call helpers.commonHeadTags data="all"/}
-      <link rel="stylesheet" href="{$baseUrl}css/lib/reset.css" type="text/css">
-      <link rel="stylesheet" type="text/css" href="{$baseUrl}css/directory/default.css">
+      <title>Sitemap</title>
     </head>
     <body>
-      {call helpers.header data="all" /}
-      <div id="content" class="dir-container inner-wrap generic-wrapper">
-        {call helpers.sitemap.showTree data="all" /}
-      </div>
+      {call helpers.sitemap.showTree data="all" /}
     </body>
   </html>
 {/template}
