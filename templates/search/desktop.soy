@@ -14,37 +14,20 @@
   <!DOCTYPE html>
   <html>
     <head>
-      {call helpers.commonHeadTags data="all"/}
-      <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" type="text/css" href="//yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css">
-      <link rel="stylesheet" type="text/css" href="{$baseUrl}css/search/default.css">
+      <title>Search</title>
     </head>
     <body>
-      {call helpers.header data="all"}
-        {param baseUrl: $baseUrl /}
-        {param locale: $locale /}
-        {param isPrimaryLocale: $isPrimaryLocale /}
-      {/call}
-      <div class="dir-container">
-        {if $resultCount == 0}
-          <h1>No Results Found</h1>
-        {else}
-          {call helpers.directory.locationList data="all"}
-            {param keys: $locations /}
-            {param locationCount: $resultCount /}
-            {param showNumLocs: false /}
-          {/call}
-          <div class="map">
-            <div id="dir-map"></div>
-          </div>
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-          {call helpers.directory.mapSetup data="all"}
-            {param keys: $locations /}
-            {param zoom: 12 /}
-            {param source: 'locationlist'/}
-          {/call}
-        {/if}
-      </div>
+      <h1>Search</h1>
+      <h3>Logo</h3>
+      <p>{$logo}</p>
+      <h3>baseUrl</h3>
+      <p>{$baseUrl}</p>
+      <h3>Locale</h3>
+      <p>{$locale}. Is Primary? {$isPrimaryLocale}</p>
+      <h3>Results</h3>
+      <p>Result count: {$resultCount}</p>
+      <p>Current page: {$currentPage}</p>
+      <p>{$locations}</p>
     </body>
   </html>
 {/template}
