@@ -16,7 +16,7 @@
     <body>
       <h1>Sitemap</h1>
       <h3>Logo</h3>
-      <p>{$logo}</p>
+      <p>{if $logo}{$logo}{/if}</p>
       <h3>baseUrl</h3>
       <p>{$baseUrl}</p>
       {call helpers.sitemap.showTree data="all" /}
