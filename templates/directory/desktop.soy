@@ -16,74 +16,20 @@
   <!DOCTYPE html>
   <html>
     <head>
-      {call helpers.commonHeadTags data="all"/}
-      <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="{$baseUrl}css/lib/jquery-jvectormap-1.2.2.css" type="text/css">
-      <link rel="stylesheet" type="text/css" href="{$baseUrl}css/directory/default.css">
+      <title>States</title>
     </head>
     <body>
-      {call helpers.header data="all"}
-        {param baseUrl: $baseUrl /}
-      {/call}
-      <div class="dir-container">
-        {call helpers.directory.listDirectory data="all" }
-          {param showNumLocs: false /}
-        {/call}
-        <div id="us-map"></div>
-      </div>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-      <script src="{$baseUrl}js/lib/jquery-jvectormap-1.2.2.min.js"></script>
-      <script src="{$baseUrl}js/lib/jquery-jvectormap-us-aea-en.js"></script>
-      <script type="text/javascript">
-        {literal}
-          $(document).ready(function() {
-            $('#us-map').vectorMap({
-              map: 'us_aea_en',
-              backgroundColor: '#f1f1f1',
-              regionStyle: {
-                initial: {
-                  fill: '#ffffff',
-                  stroke: '#b8b8b8',
-                  'stroke-width': 1,
-                  cursor: 'pointer'
-                },
-                hover: {
-                  fill: 'red'
-                }
-              },
-              series: {
-                regions: [{
-                  scale: {
-                    '0': '#ffffff',
-                    '1': '#8d8d8d'
-                  },
-                  attribute: 'fill',
-                  values: {
-                  {/literal}
-                  {foreach $key in $keys}
-                    'US-{$key.key}': '1'{if not isLast($key)},{/if}
-                  {/foreach}
-                  {literal}
-                  }
-                }]
-              },
-              onRegionClick: function(event, code){
-              //TODO(ltacon): check if valid state, if so, go to it
-              {/literal}
-              {foreach $key in $keys}
-                if (code == 'US-{$key.key}') {literal}{{/literal}
-                  window.location.href = '{$baseUrl}{$key.url}';
-                {literal}}{/literal}
-              {/foreach}
-              {literal}
-              },
-              onRegionLabelShow: function(e, el, code){
-                e.preventDefault();
-              }
-            });
-          });
-        {/literal}
-      </script>
+      <h1>Directory - States/h1>
+      <h3>Logo</h3>
+      <p>{$logo}</p>
+      <h3>baseUrl</h3>
+      <p>{$baseUrl}</p>
+      <h3>Keys</h3>
+      <ul>
+        {foreach $key in $keys}
+            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a></li>
+        {/foreach}
+      </ul>
     </body>
   </html>
 {/template}
