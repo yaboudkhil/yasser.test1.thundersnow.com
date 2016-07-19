@@ -10,15 +10,18 @@
   <!DOCTYPE html>
   <html>
     <head>
-      <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" type="text/css" href="//yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css">
-      <link rel="stylesheet" type="text/css" href="{$baseUrl}css/search/default.css">
+      <title>Static Page</title>
     </head>
     <body>
-      {call helpers.header data="all" /}
-      <div class="inner-wrapper">
-        <h1>This is a sample static page!</h1>
-      </div>
+      <h1>This is a sample static page!</h1>
+      <h3>Logo</h3>
+      <p>{$logo}</p>
+      <h3>baseUrl</h3>
+      <p>{$baseUrl}</p>
+      <h3>Locale</h3>
+      <p>{$locale}</p>
+      <h3>Versions</h3>
+      <p>{$versions}</p>
     </body>
   </html>
 {/template}
