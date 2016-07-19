@@ -28,7 +28,7 @@
       <p>Total Locations: {$locationCount}</p>
       <ul>
         {foreach $key in $keys}
-            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a></li>
+            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a> ({$key.count})</li>
         {/foreach}
       </ul>
       <h3>Crumbs</h3>
@@ -65,7 +65,7 @@
       <p>Total Locations: {$locationCount}</p>
       <ul>
         {foreach $key in $keys}
-            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a></li>
+            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a> ({$key.count})</li>
         {/foreach}
       </ul>
       <h3>Crumbs</h3>
@@ -87,30 +87,28 @@
  * @param crumbUrls Sorted list of breadcrumb urls
  */
 {template .locationList}
-<html>
-  <head>
-    {call helpers.commonHeadTags data="all"/}
-    <link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{$baseUrl}css/directory/default.css">
-  </head>
-  <body>
-      {call helpers.header data="all"}
-        {param baseUrl: $baseUrl /}
-      {/call}
-    <div class="dir-container">
-      {call helpers.directory.locationList data="all"}
-        {param showNumLocs: false /}
-      {/call}
-      <div class="map">
-        <div id="dir-map"></div>
-      </div>
-    </div>
-    {call helpers.directory.mapSetup data="all"}
-      {param zoom: 12 /}
-      {param source: 'locationlist'/}
-    {/call}
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Locations</title>
+    </head>
+    <body>
+      <h1>Directory - Locations</h1>
+      <h3>Logo</h3>
+      <p>{$logo}</p>
+      <h3>baseUrl</h3>
+      <p>{$baseUrl}</p>
+      <h3>Keys</h3>
+      <p>Total Locations: {$locationCount}</p>
+      <ul>
+        {foreach $key in $keys}
+            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a> ({$key.count})</li>
+        {/foreach}
+      </ul>
+      <h3>Crumbs</h3>
+      <p>{$crumbNames} - {$crumbUrls}</p>
+    </body>
+  </html>
 {/template}
 
 /**
