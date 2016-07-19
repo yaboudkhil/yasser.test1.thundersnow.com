@@ -110,33 +110,3 @@
     </body>
   </html>
 {/template}
-
-/**
- * Generic template that displays items in a simple column list view.
- * @param logo The business logo that is displayed in the header
- * @param baseUrl String the base url of current directory page
- * @param keys List of Objects: {key (name of this next directory level),
- *                               loc (location information of a location in this directory),
- *                               url (url of this directory level),
- *                               count(number of locations in this directory level)}
- * @param crumbNames Sorted list of breadcrumb names
- * @param crumbUrls Sorted list of breadcrumb urls
- */
-{template .genericList}
-  <html>
-    <head>
-      {call helpers.commonHeadTags data="all"/}
-      <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" type="text/css" href="{$baseUrl}css/directory/default.css">
-    </head>
-    <body>
-      {call helpers.header data="all"}
-        {param baseUrl: $baseUrl /}
-      {/call}
-      <div class="generic-wrapper">
-        {call helpers.directory.genericList data="all" /}
-      </div>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    </body>
-  </html>
-{/template}
