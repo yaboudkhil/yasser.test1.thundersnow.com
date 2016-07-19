@@ -25,11 +25,14 @@
       <h3>baseUrl</h3>
       <p>{$baseUrl}</p>
       <h3>Keys</h3>
+      <p>Total Locations: {$locationCount}</p>
       <ul>
         {foreach $key in $keys}
             <li><a href="{$baseUrl}{$key.url}">{$key.key}</a></li>
         {/foreach}
       </ul>
+      <h3>Crumbs</h3>
+      <p>{$crumbNames} - {$crumbUrls}</p>
     </body>
   </html>
 {/template}
