@@ -1,6 +1,30 @@
 {namespace desktop.static}
 
 /**
+ * @param baseUrl
+ */
+{template .index}
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Pages Dev Site</title>
+    </head>
+    <body>
+      <h1>Pages Development Site</h1>
+      <h3>Directories</h3>
+      <ul>
+        <li><a href="{$baseUrl}/directory1/index.html">Directory 1 (States)</a></li>
+      </ul>
+      <h3>Static Pages</h3>
+      <ul>
+        <li><a href="{$baseUrl}">This Index</a></li>
+        <li><a href="{$baseUrl}/static.html">static.html</a></li>
+      </ul>
+    </body>
+  </html>
+{/template}
+
+/**
  * @param logo
  * @param baseUrl
  * @param locale
