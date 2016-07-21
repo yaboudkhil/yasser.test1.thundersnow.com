@@ -19,7 +19,11 @@
     <body>
       <h1>Search</h1>
       <h3>Logo</h3>
-      <p>{$logo}</p>
+      <p>
+        {if $logo}
+          {$logo}
+        {/if}
+      </p>
       <h3>baseUrl</h3>
       <p>{$baseUrl}</p>
       <h3>Locale</h3>
