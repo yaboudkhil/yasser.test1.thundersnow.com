@@ -101,7 +101,9 @@
     <p>{$bios}</p>
  
     <h3>Nearby Locations</h3>
-    <p>{$nearbyLocations}</p>
+      {call helpers.locations data="all"}
+        {param locations: $nearbyLocations/}
+      {/call}
 
     <h3>Listings</h3>
     <p>{$listings}</p>
