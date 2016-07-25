@@ -22,7 +22,7 @@
         <p><strong>No logo</strong></p>
       {/if}
       <h3>Locale</h3>
-      <p>{$locale}. Is Primary? {$isPrimaryLocale}</p>
+      <p>{$locale}. {if $isPrimaryLocale} Is Primary? {$isPrimaryLocale} {/if}</p>
 {/template}
 
 {template .footer}
