@@ -1,6 +1,7 @@
 {namespace desktop.search}
 
 /**
+ * @param? query
  * @param isHttps
  * @param logo
  * @param baseUrl
@@ -16,6 +17,7 @@
       {param title: 'Search'/}
   {/call}
 
+  <form method="get"><input type="text" name="q" value="{$query}"/><input type="submit" value="Go"/></form>
   <h3>Results</h3>
   <p>Result count: {$resultCount}</p>
   <p>Results per page: {$resultsPerPage}</p>
