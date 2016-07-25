@@ -13,28 +13,7 @@
  * @param crumbUrls Sorted list of breadcrumb urls
  */
 {template .stateList}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>States</title>
-    </head>
-    <body>
-      <h1>Directory - States</h1>
-      <h3>Logo</h3>
-      <p>{$logo}</p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      <h3>Keys</h3>
-      <p>Total Locations: {$locationCount}</p>
-      <ul>
-        {foreach $key in $keys}
-            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a> ({$key.count})</li>
-        {/foreach}
-      </ul>
-      <h3>Crumbs</h3>
-      <p>{$crumbNames} - {$crumbUrls}</p>
-    </body>
-  </html>
+      {call desktop.directory.stateList data="all" /}
 {/template}
 
 /**
@@ -50,28 +29,7 @@
  * @param crumbUrls Sorted list of breadcrumb urls
  */
 {template .cityList}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Cities</title>
-    </head>
-    <body>
-      <h1>Directory - Cities</h1>
-      <h3>Logo</h3>
-      <p>{$logo}</p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      <h3>Keys</h3>
-      <p>Total Locations: {$locationCount}</p>
-      <ul>
-        {foreach $key in $keys}
-            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a> ({$key.count})</li>
-        {/foreach}
-      </ul>
-      <h3>Crumbs</h3>
-      <p>{$crumbNames} - {$crumbUrls}</p>
-    </body>
-  </html>
+      {call desktop.directory.cityList data="all" /}
 {/template}
 
 /**
@@ -87,26 +45,5 @@
  * @param crumbUrls Sorted list of breadcrumb urls
  */
 {template .locationList}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Locations</title>
-    </head>
-    <body>
-      <h1>Directory - Locations</h1>
-      <h3>Logo</h3>
-      <p>{$logo}</p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      <h3>Keys</h3>
-      <p>Total Locations: {$locationCount}</p>
-      <ul>
-        {foreach $key in $keys}
-            <li><a href="{$baseUrl}{$key.url}">{$key.key}</a> (<a href="{$baseUrl}/alias1/{$key.url}">alias 1</a>) (<a href="{$baseUrl}/alias2/{$key.url}">alias 2</a>) ({$key.count})</li>
-        {/foreach}
-      </ul>
-      <h3>Crumbs</h3>
-      <p>{$crumbNames} - {$crumbUrls}</p>
-    </body>
-  </html>
+      {call desktop.directory.locationList data="all" /}
 {/template}
