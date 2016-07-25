@@ -4,30 +4,7 @@
  * @param baseUrl
  */
 {template .index}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Pages Dev Site</title>
-    </head>
-    <body>
-      <h1>Pages Development Site</h1>
-      <h3>Directories</h3>
-      <ul>
-        <li><a href="{$baseUrl}/directory1/index.html">Directory 1 (States)</a></li>
-        <li><a href="{$baseUrl}/bars/index.html">Bars</a></li>
-      </ul>
-      <h3>Static Pages</h3>
-      <ul>
-        <li><a href="{$baseUrl}">This Index</a></li>
-        <li><a href="{$baseUrl}/static.html">static.html</a></li>
-      </ul>
-      <h3>Sitemaps</h3>
-      <ul>
-        <li><a href="{$baseUrl}/sitemap.html">HTML</a></li>
-        <li><a href="{$baseUrl}/sitemap.xml">XML</a></li>
-      </ul>
-    </body>
-  </html>
+      {call desktop.static.index data="all" /}
 {/template}
 
 /**
@@ -37,21 +14,5 @@
  * @param versions
  */
 {template .default}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Static Page</title>
-    </head>
-    <body>
-      <h1>This is a sample static page!</h1>
-      <h3>Logo</h3>
-      <p>{if $logo}{$logo}{/if}</p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      <h3>Locale</h3>
-      <p>{$locale}</p>
-      <h3>Versions</h3>
-      <p>{$versions}</p>
-    </body>
-  </html>
+      {call desktop.static.default data="all" /}
 {/template}
