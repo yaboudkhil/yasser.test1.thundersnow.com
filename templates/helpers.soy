@@ -1,6 +1,35 @@
 {namespace helpers}
 
 /**
+ * @param title
+ * @param? logo
+ * @param? locale
+ * @param? isPrimaryLocale
+ */
+{template .header}
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Pages Test Site - {$title}</title>
+    </head>
+    <body>
+      <h1>{$title}</h1>
+      {if $logo}
+      <h2>Logo</h2>
+        <img src="{$logo}"/>
+      {else}
+        <p><strong>No logo</strong></p>
+      {/if}
+      <h3>Locale</h3>
+      <p>{$locale}. Is Primary? {$isPrimaryLocale}</p>
+{/template}
+
+{template .footer}
+    </body>
+  </html>
+{/template}
+
+/**
  * @param baseUrl
  * @param locations
  */

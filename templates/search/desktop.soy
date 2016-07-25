@@ -11,28 +11,15 @@
  * @param isPrimaryLocale
  */
 {template .default}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Search</title>
-    </head>
-    <body>
-      <h1>Search</h1>
-      <h3>Logo</h3>
-      <p>
-        {if $logo}
-          {$logo}
-        {/if}
-      </p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      <h3>Locale</h3>
-      <p>{$locale}. Is Primary? {$isPrimaryLocale}</p>
-      <h3>Results</h3>
-      <p>Result count: {$resultCount}</p>
-      <p>Results per page: {$resultsPerPage}</p>
-      <p>Current page: {$currentPage}</p>
-      {call helpers.locations data="all" /}
-    </body>
-  </html>
+  {call helpers.header data="all"}
+      {param title: 'Search'/}
+  {/call}
+
+  <h3>Results</h3>
+  <p>Result count: {$resultCount}</p>
+  <p>Results per page: {$resultsPerPage}</p>
+  <p>Current page: {$currentPage}</p>
+  {call helpers.locations data="all" /}
+
+  {call helpers.footer data="all"/}
 {/template}
