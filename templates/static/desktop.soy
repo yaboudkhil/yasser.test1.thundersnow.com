@@ -4,13 +4,9 @@
  * @param baseUrl
  */
 {template .index}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Pages Dev Site</title>
-    </head>
-    <body>
-      <h1>Pages Development Site</h1>
+  {call helpers.header data="all"}
+      {param title: 'Index'/}
+  {/call}
       <h3>Directories</h3>
       <ul>
         <li><a href="{$baseUrl}/directory1/index.html">Directory 1 (States)</a></li>
@@ -28,10 +24,9 @@
       </ul>
       <h3>Searchers</h3>
       <h4>Store Locator</h4>
-      <form method="get" action="/search.html"><input type="text" name="q"/><input type="submit" value="Go"/></form> 
+      <form method="get" action="/search.html"><input type="text" name="q"/><input type="submit" value="Go"/></form>
       <hr/>
-    </body>
-  </html>
+  {call helpers.footer data="all"/}
 {/template}
 
 /**
@@ -41,21 +36,10 @@
  * @param versions
  */
 {template .default}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Static Page</title>
-    </head>
-    <body>
-      <h1>This is a sample static page!</h1>
-      <h3>Logo</h3>
-      <p>{if $logo}{$logo}{/if}</p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      <h3>Locale</h3>
-      <p>{$locale}</p>
+  {call helpers.header data="all"}
+      {param title: 'Static Page'/}
+  {/call}
       <h3>Versions</h3>
       <p>{$versions}</p>
-    </body>
-  </html>
+  {call helpers.footer data="all"/}
 {/template}

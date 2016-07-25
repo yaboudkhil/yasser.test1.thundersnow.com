@@ -2,6 +2,7 @@
 
 /**
  * @param title
+ * @param? baseUrl
  * @param? logo
  * @param? locale
  * @param? isPrimaryLocale
@@ -16,7 +17,7 @@
       <h1>{$title}</h1>
       {if $logo}
       <h2>Logo</h2>
-        <img src="{$logo}"/>
+        <img src="{$baseUrl}{$logo}"/>
       {else}
         <p><strong>No logo</strong></p>
       {/if}

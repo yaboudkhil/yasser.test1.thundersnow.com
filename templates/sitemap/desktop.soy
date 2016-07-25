@@ -8,18 +8,9 @@
  * @param siteTree
  */
 {template .default}
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Sitemap</title>
-    </head>
-    <body>
-      <h1>Sitemap</h1>
-      <h3>Logo</h3>
-      <p>{if $logo}{$logo}{/if}</p>
-      <h3>baseUrl</h3>
-      <p>{$baseUrl}</p>
-      {call helpers.sitemap.showTree data="all" /}
-    </body>
-  </html>
+  {call helpers.header data="all"}
+      {param title: 'Sitemap'/}
+  {/call}
+  {call helpers.sitemap.showTree data="all" /}
+  {call helpers.footer data="all"/}
 {/template}
