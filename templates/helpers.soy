@@ -19,7 +19,9 @@
       <h1>{$title}</h1>
       {if $crumbNames}
       <h3>Crumbs</h3>
-      <p>{$crumbNames} - {$crumbUrls}</p>
+  	{foreach $name in $crumbNames}
+	    <a { if isLast($name) }class="selected" {/if}href="{$baseUrl}{$crumbUrls[index($name)]}">{isFirst($name) ? 'Locations' : $name  }</a>
+  	{/foreach}
       {/if}
       <p><a href="{$baseUrl}">Base</a></p>
       {if $logo}
