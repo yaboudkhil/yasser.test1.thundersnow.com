@@ -15,9 +15,10 @@
     </head>
     <body>
       <h1>{$title}</h1>
+      <p><a href="{$baseUrl}">Base</a></p>
       {if $logo}
       <h2>Logo</h2>
-        <img src="{$baseUrl}{$logo}"/>
+        <img src="{$logo}"/>
       {else}
         <p><strong>No logo</strong></p>
       {/if}
