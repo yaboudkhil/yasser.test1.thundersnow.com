@@ -6,6 +6,8 @@
  * @param? logo
  * @param? locale
  * @param? isPrimaryLocale
+ * @param? crumbNames Sorted list of breadcrumb names
+ * @param? crumbUrls Sorted list of breadcrumb urls
  */
 {template .header}
   <!DOCTYPE html>
@@ -15,6 +17,10 @@
     </head>
     <body>
       <h1>{$title}</h1>
+      {if $crumbNames}
+      <h3>Crumbs</h3>
+      <p>{$crumbNames} - {$crumbUrls}</p>
+      {/if}
       <p><a href="{$baseUrl}">Base</a></p>
       {if $logo}
       <h2>Logo</h2>
