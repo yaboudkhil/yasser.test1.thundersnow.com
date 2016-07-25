@@ -1,6 +1,7 @@
 {namespace helpers}
 
 /**
+ * @param? isHttps
  * @param title
  * @param? baseUrl
  * @param? logo
@@ -17,6 +18,7 @@
     </head>
     <body>
       <h1>{$title}</h1>
+      <p>isHttps? {$isHttps}</p>
       {if $crumbNames}
       <h3>Crumbs</h3>
   	{foreach $name in $crumbNames}
