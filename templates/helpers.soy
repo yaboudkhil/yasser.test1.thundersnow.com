@@ -7,7 +7,7 @@
 {template .locations}
       <ul>
       {foreach $location in $locations}
-      <li><a href="{$baseUrl}{$location.url}">{$location.loc.name}</a></li>
+      <li><a href="{$baseUrl}{$location.url}">{if $location.loc}{$location.loc.name}{else}{$location.name}{/if}</a></li>
       {/foreach}
       </ul>
 {/template}
