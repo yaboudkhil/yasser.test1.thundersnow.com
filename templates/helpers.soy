@@ -1,0 +1,13 @@
+{namespace helpers}
+
+/**
+ * @param baseUrl
+ * @param locations
+ */
+{template .locations}
+      <ul>
+      {foreach $location in $locations}
+      <li><a href="{$baseUrl}{$location.url}">{$location.loc.name}</a></li>
+      {/foreach}
+      </ul>
+{/template}

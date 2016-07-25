@@ -32,11 +32,7 @@
       <p>Result count: {$resultCount}</p>
       <p>Results per page: {$resultsPerPage}</p>
       <p>Current page: {$currentPage}</p>
-      <ul>
-      {foreach $location in $locations}
-      <li><a href="{$location.url}">{$location.loc.name}</a></li>
-      {/foreach}
-      </ul>
+      {call helpers.locations data="all" /}
     </body>
   </html>
 {/template}
