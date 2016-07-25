@@ -20,8 +20,9 @@
       {if $crumbNames}
       <h3>Crumbs</h3>
   	{foreach $name in $crumbNames}
-	    {if !isFirst($name) }
-             &nbsp;|&nsbp; 
+	    {if isFirst($name) }
+            {else}
+             &nbsp;|&nsbp;
 	   {/if}
 	    <a { if isLast($name) }class="selected" {/if}href="{$baseUrl}{$crumbUrls[index($name)]}">{isFirst($name) ? 'Locations' : $name  }</a>
   	{/foreach}
