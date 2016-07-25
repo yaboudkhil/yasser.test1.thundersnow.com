@@ -34,16 +34,10 @@
  * @param? listings
  */
 {template .default}
-<!doctype html>
-<html>
-  <head>
-    <title>{$name}</title>
-  </head>
-  <body>
-    <h1>{$name}</h1>
+  {call helpers.header data="all"}
+      {param title: $name/}
+  {/call}
     <p>{$description}</p>
-    <p>{$baseUrl}</p>
-
     <h3>Address</h3>
     <ul>
       <li>{$address1}</li>
@@ -53,16 +47,16 @@
       <li>{$postalCode}</li>
       <li>{$country} - {$countryName}</li>
     </ul>
-    
+
     <h3>Phone</h3>
     <p>{$phone}</p>
 
     <h3>Lat/Lng</h3>
     <p>{$latitude},{$longitude}</p>
-    
+
     <h3>Hours</h3>
     <p>{$hours}</p>
-    
+
     <h3>Logo</h3>
     <p>{$logo}</p>
 
@@ -99,7 +93,7 @@
 
     <h3>Bios</h3>
     <p>{$bios}</p>
- 
+
     <h3>Nearby Locations</h3>
       {call helpers.locations data="all"}
         {param locations: $nearbyLocations/}
@@ -108,6 +102,5 @@
     <h3>Listings</h3>
     <p>{$listings}</p>
 
-  </body>
-</html>
+  {call helpers.footer data="all"/}
 {/template}
