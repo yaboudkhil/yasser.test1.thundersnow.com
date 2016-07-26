@@ -102,7 +102,7 @@
 					},
 					{
 						"urlTemplate": "desktop.urls.directory1City",
-						"template": "desktop.directory.CityList",
+						"template": "desktop.directory.cityList",
 						"field": "City",
 						"orderBy": {
 							"field": "City",
