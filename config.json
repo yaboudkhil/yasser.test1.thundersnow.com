@@ -82,7 +82,7 @@
 			"name": "Bar Locator",
 			"search": {
 				"locationPageSet": "Bars",
-				"urlTemplate": "desktop.urls.storelocator",
+				"urlTemplate": "desktop.urls.barlocator",
 				"template": "desktop.search.default",
 				"queryParam": "q"
 			}
