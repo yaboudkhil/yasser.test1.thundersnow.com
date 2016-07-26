@@ -1,0 +1,145 @@
+{
+	"configVersion": "1",
+	"deviceDetected": false,
+	"https": false,
+	"liveSite": false,
+	"locales": ["en"],
+	"templateVersion": 3,
+	"features": [
+		{
+			"name": "Index",
+			"staticPage": {
+				"urlTemplate": "desktop.urls.index",
+				"template": "desktop.static.index"
+			}
+		},
+		{
+			"name": "Static",
+			"staticPage": {
+				"urlTemplate": "desktop.urls.static",
+				"template": "desktop.static.default"
+			}
+		},
+		{
+			"name": "Geocode IP",
+			"geocodeIP": {
+				"urlTemplate": "desktop.urls.geocodeip"
+			}
+		},
+		{
+			"name": "Reverse Geocode",
+			"reverseGeocode": {
+				"urlTemplate": "desktop.urls.reversegeocodemissing"
+			}
+		},
+		{
+			"name": "XML Sitemap",
+			"xmlsitemap": {
+				"urlTemplate": "desktop.urls.xmlSitemap",
+				"excludeStaticFiles": true
+			}
+		},
+		{
+			"name": "HTML Sitemap",
+			"htmlsitemap": {
+				"urlTemplate": "desktop.urls.htmlSitemap",
+				"template": "desktop.sitemap.default"
+			}
+		},
+		{
+			"name": "Locations",
+			"locationPageSet": {
+				"urlTemplate": "desktop.urls.locationPageSet1",
+				"template": "desktop.location.default",
+				"outputFormat": ["Html", "Json"],
+				"urlAliases": [
+					"desktop.urls.locationPageSet1alias1",
+					"desktop.urls.locationPageSet1alias2"
+				]
+			}
+		},
+		{
+			"name": "Bars",
+			"locationPageSet": {
+				"urlTemplate": "desktop.urls.bars",
+				"template": "desktop.location.default",
+				"outputFormat": ["Html", "Json"],
+				"locationScope" : {
+					"savedSearch" : "Bars"
+				}
+			}
+		},
+		{
+			"name": "Store Locator",
+			"search": {
+				"locationPageSet": "Locations",
+				"urlTemplate": "desktop.urls.storelocator",
+				"template": "desktop.search.default",
+				"queryParam": "q"
+			}
+		},
+		{
+			"name": "Bar Locator",
+			"search": {
+				"locationPageSet": "Bars",
+				"urlTemplate": "desktop.urls.storelocator",
+				"template": "desktop.search.default",
+				"queryParam": "q"
+			}
+		},
+		{
+			"name": "State - City Drilldown",
+			"locationDirectory": {
+				"levels": [
+					{
+						"urlTemplate": "desktop.urls.directory1State",
+						"template": "desktop.directory.stateList",
+						"field": "State",
+						"orderBy": {
+							"field": "State",
+							"order": "ascending"
+						}
+					},
+					{
+						"urlTemplate": "desktop.urls.directory1City",
+						"template": "desktop.directory.CityList",
+						"field": "City",
+						"orderBy": {
+							"field": "City",
+							"order": "ascending"
+						}
+					},
+					{
+						"urlTemplate": "desktop.urls.directory1Location",
+						"template": "desktop.directory.locationList",
+						"field": "Locations",
+						"orderBy": {
+							"field": "Locations",
+							"order": "ascending"
+						}
+					}
+				],
+				"locationPageSet": "Locations",
+				"outputFormat": ["Html"]
+			}
+		},
+		{
+			"name": "Bar list",
+			"locationDirectory": {
+				"levels": [
+					{
+						"urlTemplate": "desktop.urls.directoryBarsLocations",
+						"template": "desktop.directory.locationList",
+						"field": "Locations",
+						"orderBy": {
+							"field": "Locations",
+							"order": "ascending"
+						}
+					}
+				],
+				"locationPageSet": "Bars",
+				"outputFormat": ["Html"]
+			}
+		}
+	]
+}

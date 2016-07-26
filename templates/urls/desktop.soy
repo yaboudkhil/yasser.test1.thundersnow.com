@@ -1,0 +1,105 @@
+{namespace desktop.urls}
+
+{template .index}
+index.html
+{/template}
+
+{template .static}
+static.html
+{/template}
+
+{template .geocodeip}
+geocode-ip
+{/template}
+
+{template .reversegeocode}
+reverse-geocode
+{/template}
+
+{template .xmlSitemap}
+sitemap.xml
+{/template}
+
+{template .htmlSitemap}
+sitemap.html
+{/template}
+
+/**
+ * @param id
+ * @param state
+ * @param city
+ * @param address1
+ * @param country
+ * @param? isCollision
+ */
+{template .locationPageSet1}
+lps1/{$country|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$state|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$city|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$address1|spaces:'-'|latin:true|other:'-'|casing:'lower'}{if $isCollision}-{$id}{/if}.html
+{/template}
+
+/**
+ * @param id
+ * @param state
+ * @param city
+ * @param address1
+ * @param country
+ * @param? isCollision
+ */
+{template .locationPageSet1alias1}
+alias1/lps1/{$country|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$state|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$city|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$address1|spaces:'-'|latin:true|other:'-'|casing:'lower'}{if $isCollision}-{$id}{/if}.html
+{/template}
+
+/**
+ * @param id
+ * @param state
+ * @param city
+ * @param address1
+ * @param country
+ * @param? isCollision
+ */
+{template .locationPageSet1alias2}
+alias2/lps1/{$country|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$state|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$city|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$address1|spaces:'-'|latin:true|other:'-'|casing:'lower'}{if $isCollision}-{$id}{/if}.html
+{/template}
+
+/**
+ * @param id
+ * @param name
+ * @param? isCollision
+ */
+{template .bars}
+bars/{$name|spaces:'-'|latin:true|other:'-'|casing:'lower'}{if $isCollision}-{$id}{/if}.html
+{/template}
+
+{template .barlocator}
+barsearch.html
+{/template}
+
+{template .storelocator}
+search.html
+{/template}
+
+/**
+ */
+{template .directory1State}
+directory1/index.html
+{/template}
+
+/**
+ * @param state
+ */
+{template .directory1City}
+directory1/{$state|latin:true|other:'-'|spaces:'-'|casing:'lower'}.html
+{/template}
+
+/**
+ * @param state
+ * @param city
+ */
+{template .directory1Locations}
+directory1/{$state|latin:true|other:'-'|spaces:'-'|casing:'lower'}/{$city|latin:true|other:'-'|spaces:'-'|casing:'lower'}.html
+{/template}
+
+/**
+ */
+{template .directoryBarsLocations}
+bars/index.html
+{/template}
