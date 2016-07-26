@@ -110,7 +110,7 @@
 						}
 					},
 					{
-						"urlTemplate": "desktop.urls.directory1Location",
+						"urlTemplate": "desktop.urls.directory1Locations",
 						"template": "desktop.directory.locationList",
 						"field": "Locations",
 						"orderBy": {
