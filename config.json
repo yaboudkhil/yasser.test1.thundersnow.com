@@ -29,7 +29,7 @@
 		{
 			"name": "Reverse Geocode",
 			"reverseGeocode": {
-				"urlTemplate": "desktop.urls.reversegeocodemissing"
+				"urlTemplate": "desktop.urls.reversegeocode"
 			}
 		},
 		{
