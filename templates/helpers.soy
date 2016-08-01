@@ -19,7 +19,7 @@
     </head>
     <body>
       <h1>{$title}</h1>
-      <p>Template: {if $soyTemplateName} $soyTemplateName {else} Not provided {/if}
+      <p>Template: {if $soyTemplateName} {$soyTemplateName} {else} Not provided {/if}
       <p>isHttps? {$isHttps}</p>
       {if $crumbNames}
       <h3>Crumbs</h3>
