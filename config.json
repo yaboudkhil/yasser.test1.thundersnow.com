@@ -65,7 +65,7 @@
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
 				"locationScope" : {
-					"savedSearch" : "Bars"
+					"savedSearch" : "1611"
 				}
 			}
 		},
