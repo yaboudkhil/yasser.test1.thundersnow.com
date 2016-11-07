@@ -120,9 +120,6 @@
 					}
 				],
 				"locationPageSet": "Locations",
-				"locationScopeOverride": {
-					"savedSearch": "1600"
-				},
 				"outputFormat": ["Html"]
 			}
 		},
@@ -141,6 +138,9 @@
 					}
 				],
 				"locationPageSet": "Bars",
+				"locationScopeOverride": {
+					"savedSearch": "1600"
+				},
 				"outputFormat": ["Html"]
 			}
 		}
