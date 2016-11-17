@@ -75,7 +75,13 @@
 				"locationPageSet": "Locations",
 				"urlTemplate": "desktop.urls.storelocator",
 				"template": "desktop.search.default",
-				"queryParam": "q"
+				"queryParam": "q",
+				"customParams": [
+					{
+						"name": "Custom String",
+						"param": "customParam"
+					}
+				]
 			}
 		},
 		{
