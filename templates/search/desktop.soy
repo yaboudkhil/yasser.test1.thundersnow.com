@@ -12,11 +12,14 @@
  * @param resultsPerPage
  * @param locale
  * @param isPrimaryLocale
+ * @param customParam
  */
 {template .default}
   {call helpers.header data="all"}
       {param title: 'Search'/}
   {/call}
+  
+  {$customParam}
 
   <form method="get"><input type="text" name="q" value="{$query}"/><input type="submit" value="Go"/></form>
   <h3>Results</h3>
