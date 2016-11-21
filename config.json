@@ -81,7 +81,8 @@
 						"name": "Custom String",
 						"param": "customParam"
 					}
-				]
+				],
+				"savedSearchOverride": "1600"
 			}
 		},
 		{
