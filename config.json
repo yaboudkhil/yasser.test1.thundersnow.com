@@ -72,6 +72,7 @@
 		{
 			"name": "Store Locator",
 			"search": {
+				"locationPageSet": "Locations",
 				"urlTemplate": "desktop.urls.storelocator",
 				"template": "desktop.search.default",
 				"queryParam": "q",
