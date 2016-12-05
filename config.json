@@ -81,7 +81,9 @@
 						"param": "customParam"
 					}
 				],
-				"locationScopeOverride": "1600"
+				"locationScopeOverride": {
+					"savedSearch": "1600"
+				},
 			}
 		},
 		{
