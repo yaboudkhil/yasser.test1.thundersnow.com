@@ -70,6 +70,17 @@
 			}
 		},
 		{
+			"name": "1600",
+			"locationPageSet": {
+				"urlTemplate": "desktop.urls.bars",
+				"template": "desktop.location.default",
+				"outputFormat": ["Html", "Json"],
+				"locationScope" : {
+					"savedSearch" : "1600"
+				}
+			}
+		},
+		{
 			"name": "Store Locator",
 			"search": {
 				"urlTemplate": "desktop.urls.storelocator",
