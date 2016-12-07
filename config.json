@@ -115,24 +115,6 @@
 				},
 				"outputFormat": ["Html"]
 			}
-		},
-		{
-			"name": "Bar list",
-			"locationDirectory": {
-				"levels": [
-					{
-						"urlTemplate": "desktop.urls.directoryBarsLocations",
-						"template": "desktop.directory.locationList",
-						"field": "Locations",
-						"orderBy": {
-							"field": "Locations",
-							"order": "ascending"
-						}
-					}
-				],
-				"locationPageSet": "Bars",
-				"outputFormat": ["Html"]
-			}
 		}
 	]
 }
