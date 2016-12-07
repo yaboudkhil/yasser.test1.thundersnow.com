@@ -59,15 +59,6 @@
 			}
 		},
 		{
-			"name": "Bar Locator",
-			"search": {
-				"locationPageSet": "Bars",
-				"urlTemplate": "desktop.urls.barlocator",
-				"template": "desktop.search.default",
-				"queryParam": "q"
-			}
-		},
-		{
 			"name": "State - City Drilldown",
 			"locationDirectory": {
 				"levels": [
