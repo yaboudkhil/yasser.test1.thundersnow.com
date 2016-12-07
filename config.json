@@ -72,7 +72,7 @@
 		{
 			"name": "1600",
 			"locationPageSet": {
-				"urlTemplate": "desktop.urls.bars",
+				"urlTemplate": "desktop.urls.same",
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
 				"locationScope" : {
