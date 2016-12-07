@@ -59,17 +59,6 @@
 			}
 		},
 		{
-			"name": "Bars",
-			"locationPageSet": {
-				"urlTemplate": "desktop.urls.bars",
-				"template": "desktop.location.default",
-				"outputFormat": ["Html", "Json"],
-				"locationScope" : {
-					"savedSearch" : "Bars"
-				}
-			}
-		},
-		{
 			"name": "Bar Locator",
 			"search": {
 				"locationPageSet": "Bars",
