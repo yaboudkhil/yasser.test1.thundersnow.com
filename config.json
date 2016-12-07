@@ -70,23 +70,6 @@
 			}
 		},
 		{
-			"name": "Store Locator",
-			"search": {
-				"urlTemplate": "desktop.urls.storelocator",
-				"template": "desktop.search.default",
-				"queryParam": "q",
-				"customParams": [
-					{
-						"name": "Custom String",
-						"param": "customParam"
-					}
-				],
-				"locationScopeOverride": {
-					"savedSearch": "Bars"
-				}
-			}
-		},
-		{
 			"name": "Bar Locator",
 			"search": {
 				"locationPageSet": "Bars",
