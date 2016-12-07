@@ -138,9 +138,8 @@
 						}
 					}
 				],
-				"locationPageSet": "1600",
 				"locationScopeOverride": {
-					"savedSearch": "Locations"
+					"savedSearch": "AllLocations"
 				},
 				"outputFormat": ["Html"]
 			}
