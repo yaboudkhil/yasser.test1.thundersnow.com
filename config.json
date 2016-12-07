@@ -65,18 +65,7 @@
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
 				"locationScope" : {
-					"savedSearch" : "1611"
-				}
-			}
-		},
-		{
-			"name": "1600",
-			"locationPageSet": {
-				"urlTemplate": "desktop.urls.same",
-				"template": "desktop.location.default",
-				"outputFormat": ["Html", "Json"],
-				"locationScope" : {
-					"savedSearch" : "1600"
+					"savedSearch" : "Bars"
 				}
 			}
 		},
@@ -159,9 +148,6 @@
 					}
 				],
 				"locationPageSet": "Bars",
-				"locationScopeOverride": {
-					"savedSearch": "1600"
-				},
 				"outputFormat": ["Html"]
 			}
 		}
