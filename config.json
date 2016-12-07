@@ -140,7 +140,7 @@
 				],
 				"locationPageSet": "1600",
 				"locationScopeOverride": {
-					"savedSearch": "Bars"
+					"savedSearch": "Locations"
 				},
 				"outputFormat": ["Html"]
 			}
