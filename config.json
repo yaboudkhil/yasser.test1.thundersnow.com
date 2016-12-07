@@ -90,6 +90,42 @@
 						}
 					}
 				],
+				"locationPageSet": "Location",
+				"outputFormat": ["Html"]
+			}
+		},
+		{
+			"name": "State - City Drilldown",
+			"locationDirectory": {
+				"levels": [
+					{
+						"urlTemplate": "desktop.urls.directory1State",
+						"template": "desktop.directory.stateList",
+						"field": "State",
+						"orderBy": {
+							"field": "State",
+							"order": "ascending"
+						}
+					},
+					{
+						"urlTemplate": "desktop.urls.directory1City",
+						"template": "desktop.directory.cityList",
+						"field": "City",
+						"orderBy": {
+							"field": "City",
+							"order": "ascending"
+						}
+					},
+					{
+						"urlTemplate": "desktop.urls.directory1Locations",
+						"template": "desktop.directory.locationList",
+						"field": "Locations",
+						"orderBy": {
+							"field": "Locations",
+							"order": "ascending"
+						}
+					}
+				],
 				"locationScopeOverride": {
 					"savedSearch": "AllLocations"
 				},
