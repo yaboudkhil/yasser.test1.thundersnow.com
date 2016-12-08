@@ -59,21 +59,6 @@
 			}
 		},
 		{
-			"name": "Location",
-			"locationPageSet": {
-				"urlTemplate": "desktop.urls.same",
-				"template": "desktop.location.default",
-				"outputFormat": ["Html", "Json"],
-				"urlAliases": [
-					"desktop.urls.locationPageSet1alias1",
-					"desktop.urls.locationPageSet1alias2"
-				],
-				"locationScope": {
-					"savedSearch": "wine"
-				}
-			}
-		},
-		{
 			"name": "State - City Drilldown",
 			"locationDirectory": {
 				"levels": [
