@@ -90,6 +90,7 @@
 						}
 					}
 				],
+				"locationPageSet": "Locations",
 				"locationScopeOverride": {
 					"savedSearch": "AllLocations"
 				},
