@@ -59,6 +59,21 @@
 			}
 		},
 		{
+			"name": "Good Times",
+			"locationPageSet": {
+				"urlTemplate": "desktop.urls.locationPageSet1",
+				"template": "desktop.location.default",
+				"outputFormat": ["Html", "Json"],
+				"locationScope": {
+					"savedSearch": "GoodTimes"
+				},
+				"urlAliases": [
+					"desktop.urls.locationPageSet1alias1",
+					"desktop.urls.locationPageSet1alias2"
+				]
+			}
+		},
+		{
 			"name": "State - City Drilldown",
 			"locationDirectory": {
 				"levels": [
@@ -90,7 +105,7 @@
 						}
 					}
 				],
-				"locationPageSet": "Locations",
+				"locationPageSet": "GoodTimes",
 				"outputFormat": ["Html"]
 			}
 		}
