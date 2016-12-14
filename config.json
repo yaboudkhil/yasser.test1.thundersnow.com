@@ -61,16 +61,12 @@
 		{
 			"name": "Good Times",
 			"locationPageSet": {
-				"urlTemplate": "desktop.urls.locationPageSet1",
+				"urlTemplate": "desktop.urls.bars",
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
 				"locationScope": {
 					"savedSearch": "GoodTimes"
 				},
-				"urlAliases": [
-					"desktop.urls.locationPageSet1alias1",
-					"desktop.urls.locationPageSet1alias2"
-				]
 			}
 		},
 		{
