@@ -101,7 +101,9 @@
 						}
 					}
 				],
-				"locationPageSet": "Good Times",
+				"locationScopeOverride": {
+					"savedSearch": "GoodTimes"
+				},
 				"outputFormat": ["Html"]
 			}
 		}
