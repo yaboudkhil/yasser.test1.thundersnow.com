@@ -66,7 +66,7 @@
 				"outputFormat": ["Html", "Json"],
 				"locationScope": {
 					"savedSearch": "GoodTimes"
-				},
+				}
 			}
 		},
 		{
