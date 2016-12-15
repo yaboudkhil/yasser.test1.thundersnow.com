@@ -101,10 +101,7 @@
 						}
 					}
 				],
-				"locationPageSet": "Good Times",
-				"locationScopeOverride": {
-					"savedSearch": "Madison"
-				},
+				"locationPageSet": "Locations",
 				"outputFormat": ["Html"]
 			}
 		}
