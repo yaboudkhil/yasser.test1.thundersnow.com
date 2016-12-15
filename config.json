@@ -65,7 +65,7 @@
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
 				"locationScope": {
-					"savedSearch": "Madison"
+					"savedSearch": "Updated"
 				}
 			}
 		},
@@ -103,7 +103,7 @@
 				],
 				"locationPageSet": "Good Times",
 				"locationScopeOverride": {
-					"savedSearch": "Updated"
+					"savedSearch": "Madison"
 				},
 				"outputFormat": ["Html"]
 			}
