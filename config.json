@@ -102,7 +102,7 @@
 					}
 				],
 				"locationScopeOverride": {
-					"savedSearch": "GoodTimes"
+					"savedSearch": "AllLocations"
 				},
 				"outputFormat": ["Html"]
 			}
