@@ -59,7 +59,7 @@
 			}
 		},
 		{
-			"name": "Good Times",
+			"name": "Good Timeos",
 			"locationPageSet": {
 				"urlTemplate": "desktop.urls.bars",
 				"template": "desktop.location.default",
