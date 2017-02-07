@@ -5,6 +5,10 @@
 	"liveSite": false,
 	"locales": ["en"],
 	"templateVersion": 3,
+	"fieldOverride": {
+		"whitelist": ["asdf"],
+		"blacklist": ["fdsa"]
+	},
 	"features": [
 		{
 			"name": "Index",
