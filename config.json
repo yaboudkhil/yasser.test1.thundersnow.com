@@ -4,6 +4,7 @@
 	"https": false,
 	"liveSite": false,
 	"locales": ["en"],
+	"templateVersion": 3,
 	"fieldOverride": {
 		"whitelist": ["asdf"],
 		"blacklist": ["fdsa"]
@@ -71,6 +72,9 @@
 					"savedSearch": "Updated"
 				}
 			}
+		},
+		{
+			"name": "Invalid?"
 		},
 		{
 			"name": "State - City Drilldown",
