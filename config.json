@@ -74,13 +74,6 @@
 			}
 		},
 		{
-			"name": "Invalid?",
-			"locationPageSet": {
-				"urlTemplate": "desktop.urls.barsa",
-				"outputFormat": ["Html", "Json"]
-			}
-		},
-		{
 			"name": "State - City Drilldown",
 			"locationDirectory": {
 				"levels": [
