@@ -56,6 +56,9 @@
 				"urlTemplate": "desktop.urls.locationPageSet1",
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
+				"locationScope": {
+					"savedSearch": "Locations"
+				}
 				"urlAliases": [
 					"desktop.urls.locationPageSet1alias1",
 					"desktop.urls.locationPageSet1alias2"
