@@ -57,7 +57,7 @@
 				"template": "desktop.location.default",
 				"outputFormat": ["Html", "Json"],
 				"locationScope": {
-					"savedSearch": "Locations"
+					"savedSearch": "AllLocations"
 				},
 				"urlAliases": [
 					"desktop.urls.locationPageSet1alias1",
