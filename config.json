@@ -58,7 +58,7 @@
 				"outputFormat": ["Html", "Json"],
 				"locationScope": {
 					"savedSearch": "Locations"
-				}
+				},
 				"urlAliases": [
 					"desktop.urls.locationPageSet1alias1",
 					"desktop.urls.locationPageSet1alias2"
