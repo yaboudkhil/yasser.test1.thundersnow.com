@@ -6,8 +6,8 @@
 	"locales": ["en"],
 	"templateVersion": 3,
 	"fieldOverride": {
-		"whitelist": ["asdf"],
-		"blacklist": ["fdsa"]
+		"whitelist": ["corporateCode"],
+		"blacklist": ["postalCode"]
 	},
 	"features": [
 		{
